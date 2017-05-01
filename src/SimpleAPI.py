@@ -18,7 +18,7 @@ app.config["MONGO_DBNAME"] = "simpleltv_db"
 
 @app.route("/topxsimpleltv", methods=['GET'])
 def get():
-    data = []
+    data = {}
     for arg in request.args:
         if arg.lower() == 'x':
             x = request.args.get(arg)
