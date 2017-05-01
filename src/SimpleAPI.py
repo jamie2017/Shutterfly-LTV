@@ -24,7 +24,7 @@ def get():
             x = request.args.get(arg)
             apicall = TopXSimpleLTVForApi()
             apicall.parseMixData()
-            data = list(apicall.topXSimpleLTVCustomers(int(x)))
+            data = dict(apicall.topXSimpleLTVCustomers(int(x)))
     return jsonify({"Top "+x+" simple Lifetime Value ": data})
 
 @app.route("/", methods=['POST'])
