@@ -17,13 +17,13 @@ Return the top x customers with the highest Simple Lifetime Value from data D.
 
 ## Solutions
 
-###1 Handle data and request in one python script
+##1 Handle data and request in one python script
      Follow the problem requirement,
      write a program that can read input data from file, 
      parse data then return top X simple LTV Customer result to output file.
      - TopXSimpleLTV.py
      
-###2 Handle data and request for long term use
+##2 Handle data and request for long term use
     Apply same logic implementing Ingest(e,D) and TopXSimpleLTVCustomers(x,D) as stated,
     Build a Restful APIs [GET,POST] with MongoDb deploy on AWS EC2
      - requirements.txt
