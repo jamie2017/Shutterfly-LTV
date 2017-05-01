@@ -1,29 +1,29 @@
-#Shutterfly Customer Lifetime Value Code Challenge
+## Shutterfly Customer Lifetime Value Code Challenge
 
-### Author: Jianmei Ye
-### 2017-05-01
+#### Author: Jianmei Ye
+#### 2017-05-01
 
 
 ## Problem Statement
 
 Write a program that ingests event data and implements one analytic method, below. You are expected to write clean, well-documented and well-tested code. Be sure to think about performance - what the performance characteristic of the code is and how it could be improved in the future.
 
-### Ingest(e, D)
+#### Ingest(e, D)
 Given event e, update data D
 
-### TopXSimpleLTVCustomers(x, D)
+#### TopXSimpleLTVCustomers(x, D)
 Return the top x customers with the highest Simple Lifetime Value from data D. 
 
 
 ## Solutions
 
-##1 Handle data and request in one python script
+### 1 Handle data and request in one python script
      Follow the problem requirement,
      write a program that can read input data from file, 
      parse data then return top X simple LTV Customer result to output file.
      - TopXSimpleLTV.py
      
-##2 Handle data and request for long term use
+### 2 Handle data and request for long term use
     Apply same logic implementing Ingest(e,D) and TopXSimpleLTVCustomers(x,D) as stated,
     Build a Restful APIs [GET,POST] with MongoDb deploy on AWS EC2
      - requirements.txt
